@@ -5,7 +5,7 @@ const app = express()
 app.use(express.json())
 connection()
 app.use(tokenRouter)
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 3000
 app.listen(port, () => {
     console.log("The app is listening at port " + port)
 })
